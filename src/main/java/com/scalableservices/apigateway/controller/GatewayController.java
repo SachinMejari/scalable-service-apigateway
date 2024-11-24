@@ -82,7 +82,7 @@ public class GatewayController {
     private String getTargetServiceUrl(String path) {
         // Define routing logic based on path
         if (path.startsWith("/api/order-gateway")) {
-            return "http://15.206.124.77:8080" + path.replace("/api/order-gateway", "");
+            return "http://65.0.91.25:8080" + path.replace("/api/order-gateway", "");
         } else if (path.startsWith("/api/restaurant-gateway")) {
             return "http://35.154.176.161:8080" + path.replace("/api/restaurant-gateway", "");
         } else if (path.startsWith("/api/delivery-gateway")) {
